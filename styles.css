@@ -1,0 +1,104 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 500px 1fr;
+  grid-template-rows: 100px 200px;
+  place-items: center;
+}
+/* size of the article */
+article {
+  width: clamp(200px, 50%, 600px);
+}
+
+/* h1 is hello there */
+h1 {
+  color: rgb(83, 153, 185);
+  text-align: center;
+}
+
+/* h2 is welcome */
+h2 {
+  color: rgb(164, 87, 194);
+  text-align: center;
+}
+
+/* it is th whole body i.e. whole screen */
+body {
+  background-color: rgb(247, 247, 247);
+  background-attachment: fixed;
+}
+
+/* this is the title at the top i.e. name of the page */
+b1 {
+  color: black;
+  size: auto;
+  background-color: rgb(200, 207, 238);
+  display: block;
+  font-size: 4em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  text-align: center;
+}
+/* removes link underline */
+.link--underline {
+  text-decoration: none;
+}
+
+/* this is the linked words primary color */
+a {
+  color: rgb(20, 61, 75);
+  background-image: linear-gradient(90deg, red, blue);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 300ms ease;
+
+  text-decoration: none;
+  font-weight: 900;
+}
+
+/* this is the linked word hover color */
+a:hover {
+  background-image: linear-gradient(90deg, red, blue);
+  background-size: 100% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 300ms ease;
+}
+
+/* this is the line with my other sites links */
+h4 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/*this is the line which describes the page*/
+h3 {
+  text-align: center;
+}
+
+/* this is the grid system for the pdf librabry */
+.container {
+  /* not working */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  grid-gap: 20px;
+}
+
+/* color: rgb(51, 51, 51);
+    transition: all 0.2s linear;
+    font-size: 1em; */
+/* of linked words */
